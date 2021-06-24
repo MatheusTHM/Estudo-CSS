@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bem.css">
+  <title>Estudo BEM</title>
+</head>
+
+<body>
+
+  <section class="listas">
+    <h1 class="listas__title">↑ Listas (Block)</h1>
+
+    <p class="listas__pointer">(Block) Lista →</p>
+    <p class="listas__pointer--reverse">← Lista (Block && Modifier)</p>
+
+    <ul class="lista lista--right">
+      <li class="lista__item">(Element) Lista__item →</li>
+      <li class="lista__item">(Element) Lista__item | Lista__item--border →</li>
+      <li class="lista__item lista__item">(Element) lista__item →</li>
+    </ul>
+
+
+    <ul class="lista lista--border">
+      <li class="lista__item">
+        <a href="#" class="lista__link">LI 1</a>
+      </li>
+      <li class="lista__item lista__item--border">
+        <a href="#" class="lista__link">LI 2</a>
+      </li>
+      <li class="lista__item">
+        <a href="#" class="lista__link lista__link--disabled">LI 3</a>
+      </li>
+    </ul>
+
+
+
+    <ul class="lista lista--border lista--reverse">
+      <li class="lista__item">
+        <a href="#" class="lista__link">LI 1</a>
+      </li>
+      <li class="lista__item">
+        <a href="#" class="lista__link lista__link--border">LI 2</a>
+      </li>
+      <li class="lista__item">
+        <a href="#" class="lista__link lista__link--disabled">LI 3</a>
+      </li>
+    </ul>
+
+
+    <ul class="lista lista--left lista--reverse">
+      <li class="lista__item">← Lista__link (Element) </li>
+      <li class="lista__item">← Lista__link | Lista__link--border (Element) </li>
+      <li class="lista__item">← Lista__link--disabled (Element && Modifier) </li>
+    </ul>
+  </section>
+
+
+</body>
+
+</html>
